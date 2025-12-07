@@ -40,4 +40,4 @@ def delete_contacts(contact_id: int, db: Session = Depends(get_db)):
     db.delete(contact)
     db.commit()
     
-    return {'message': 'Contact is delete'}
+    return contact_id
